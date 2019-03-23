@@ -1,0 +1,26 @@
+#include "define.h"
+uchar code table[]= {0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90,0xbf,0xff};
+uchar time[8] = {11,11,10,11,11,10,11,11};
+uchar nu[8] = {10,10,11,11,11,11,11,11};
+uchar ds_i;
+uchar s,m,h;
+void Init_Time();
+void get_time();
+void Timer0Init();
+void display();
+uchar key_f,key_t;
+uchar TheKey,Pre,readkey;
+void KeyScan();
+void key_deal();
+void cls_buzz();
+uchar hum_set,hum_save;
+uchar set;
+uchar mode=1;
+uchar hum;
+uint hum_per;
+void get_hum();
+uchar alm_f,alm_on;
+uchar led1_f,led2_f;
+uchar con;
+void read_hum();
+void save_hum();
